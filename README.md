@@ -23,7 +23,7 @@ The homelab serves as an environment for testing tools, performing network analy
 - Docker
 - Portainer
 - OWASP Juice Shop Container
-
+- EveBox Container
 ### Networking & Security Tools
 - Nmap
 - Wireshark
@@ -31,6 +31,8 @@ The homelab serves as an environment for testing tools, performing network analy
 - Metasploit Framework
 - Lynis
 - Maltego
+- Suricata
+- EveBox
 
 ### Password Auditing & Security Testing
 - John the Ripper Jumbo
@@ -44,6 +46,15 @@ The homelab serves as an environment for testing tools, performing network analy
 - Open WebUI
 - Continue VS Code Extension
 
+### IDS Monitoring with Suricata and EveBox
+Using Suricata and EveBox to practice network security monitoring and alert analysis.
+
+This setup is used for:
+- Monitoring network traffic
+- Viewing Suricata events in a web dashboard
+- Practicing IDS alert analysis
+- Comparing alerts with Wireshark captures
+- Testing detection behavior with Nmap and lab traffic
 ---
 
 ## Repository Structure
@@ -51,12 +62,15 @@ The homelab serves as an environment for testing tools, performing network analy
 ```text
 ubuntu-homelab/
 ├── docker/
+├── maltego/
 ├── nmap-scans/
 ├── notes/
 ├── python-tools/
 ├── screenshots/
+├── suricata/
 ├── wireshark/
 └── README.md
+```
 ```
 
 ---
@@ -78,12 +92,12 @@ ubuntu-homelab/
 
 ## Docker Services
 
-| Service | Port |
-|---|---|
-| Open WebUI | 3000 |
-| OWASP Juice Shop | 3001 |
-| Portainer | 8000 / 9443 |
-
+| Service | Port | Purpose |
+|---|---:|---|
+| Open WebUI | 3000 | Local AI web interface |
+| OWASP Juice Shop | 3001 | Vulnerable web application lab |
+| EveBox | 5636 | Suricata IDS event dashboard |
+| Portainer | 8000 / 9443 | Docker container management |
 ---
 
 ## Current Lab Projects

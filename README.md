@@ -115,7 +115,20 @@ Locally hosted Llama3 environment using:
 - Ollama
 - Open WebUI
 - Continue VS Code extension
+## Future Lab Expansions
 
+Planned additions to the homelab include:
+
+- Capture The Flag (CTF) environments
+- Vulnerable web application labs
+- SIEM and log analysis platforms
+- Active Directory testing environments
+- Dockerized cybersecurity training ranges
+- Custom Python security tools
+- Threat detection and alerting workflows
+- AI-assisted security analysis tools
+
+The long-term goal of this repository is to document, improve, and share practical cybersecurity learning environments that others can replicate and learn from.
 ### OSINT & Infrastructure Mapping
 Using Maltego and Recon-ng to:
 - Map domains and DNS relationships

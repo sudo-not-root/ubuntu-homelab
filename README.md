@@ -2,9 +2,9 @@
 
 ## Overview
 
-This repository documents the development of my personal Ubuntu-based cybersecurity homelab. The purpose of this project is to strengthen practical skills in Linux administration, networking, cybersecurity operations, scripting, containerization, vulnerability analysis, and AI-assisted workflows through hands-on experimentation and documentation.
+This repository documents the development of my personal Ubuntu-based cybersecurity homelab. The purpose of this project is to strengthen practical skills in Linux administration, networking, cybersecurity operations, scripting, containerization, vulnerability analysis, OSINT workflows, and AI-assisted development through hands-on experimentation and documentation.
 
-The homelab serves as an environment for testing tools, performing network analysis, developing Python utilities, exploring Docker containers, and studying modern cybersecurity concepts in a controlled and ethical setting.
+The homelab serves as an environment for testing tools, performing network analysis, developing Python utilities, exploring Docker containers, mapping infrastructure, and studying modern cybersecurity concepts in a controlled and ethical setting.
 
 ---
 
@@ -30,6 +30,7 @@ The homelab serves as an environment for testing tools, performing network analy
 - Recon-ng
 - Metasploit Framework
 - Lynis
+- Maltego
 
 ### Password Auditing & Security Testing
 - John the Ripper Jumbo
@@ -53,6 +54,7 @@ ubuntu-homelab/
 ├── nmap-scans/
 ├── notes/
 ├── python-tools/
+├── screenshots/
 ├── wireshark/
 └── README.md
 ```
@@ -68,6 +70,7 @@ ubuntu-homelab/
 - Vulnerability analysis
 - Password auditing
 - OSINT and reconnaissance workflows
+- Infrastructure mapping and visualization
 - AI-assisted local development
 - Python scripting and automation
 
@@ -80,6 +83,31 @@ ubuntu-homelab/
 | Open WebUI | 3000 |
 | OWASP Juice Shop | 3001 |
 | Portainer | 8000 / 9443 |
+
+---
+
+## Current Lab Projects
+
+### OWASP Juice Shop
+Dockerized vulnerable web application used for:
+- Web application testing
+- Enumeration practice
+- Nmap scanning
+- Docker container inspection
+- Security tooling experimentation
+
+### Local AI Environment
+Locally hosted Llama3 environment using:
+- Ollama
+- Open WebUI
+- Continue VS Code extension
+
+### OSINT & Infrastructure Mapping
+Using Maltego and Recon-ng to:
+- Map domains and DNS relationships
+- Visualize infrastructure
+- Practice reconnaissance workflows
+- Perform ethical OSINT research
 
 ---
 
@@ -105,8 +133,18 @@ use auxiliary/scanner/portscan/tcp
 hashcat -m 0 hash.txt rockyou.txt
 ```
 
+### Hydra Example
+```bash
+hydra -l admin -P passwords.txt ssh://127.0.0.1
+```
+
+### Recon-ng
+```bash
+recon-ng
+```
+
 ---
 
 ## Notes
 
-This homelab is intended strictly for ethical learning, defensive security research, authorized testing, and personal skill development.
+This homelab is intended strictly for ethical learning, defensive security research, authorized testing environments, and personal skill development.

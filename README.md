@@ -24,6 +24,7 @@ The homelab serves as an environment for testing tools, performing network analy
 - Portainer
 - OWASP Juice Shop Container
 - EveBox Container
+
 ### Networking & Security Tools
 - Nmap
 - Wireshark
@@ -46,7 +47,10 @@ The homelab serves as an environment for testing tools, performing network analy
 - Open WebUI
 - Continue VS Code Extension
 
-### IDS Monitoring with Suricata and EveBox
+---
+
+## IDS Monitoring with Suricata and EveBox
+
 Using Suricata and EveBox to practice network security monitoring and alert analysis.
 
 This setup is used for:
@@ -55,6 +59,7 @@ This setup is used for:
 - Practicing IDS alert analysis
 - Comparing alerts with Wireshark captures
 - Testing detection behavior with Nmap and lab traffic
+
 ---
 
 ## Repository Structure
@@ -70,7 +75,6 @@ ubuntu-homelab/
 ├── suricata/
 ├── wireshark/
 └── README.md
-```
 ```
 
 ---
@@ -98,6 +102,7 @@ ubuntu-homelab/
 | OWASP Juice Shop | 3001 | Vulnerable web application lab |
 | EveBox | 5636 | Suricata IDS event dashboard |
 | Portainer | 8000 / 9443 | Docker container management |
+
 ---
 
 ## Current Lab Projects
@@ -115,6 +120,16 @@ Locally hosted Llama3 environment using:
 - Ollama
 - Open WebUI
 - Continue VS Code extension
+
+### OSINT & Infrastructure Mapping
+Using Maltego and Recon-ng to:
+- Map domains and DNS relationships
+- Visualize infrastructure
+- Practice reconnaissance workflows
+- Perform ethical OSINT research
+
+---
+
 ## Future Lab Expansions
 
 Planned additions to the homelab include:
@@ -129,12 +144,6 @@ Planned additions to the homelab include:
 - AI-assisted security analysis tools
 
 The long-term goal of this repository is to document, improve, and share practical cybersecurity learning environments that others can replicate and learn from.
-### OSINT & Infrastructure Mapping
-Using Maltego and Recon-ng to:
-- Map domains and DNS relationships
-- Visualize infrastructure
-- Practice reconnaissance workflows
-- Perform ethical OSINT research
 
 ---
 
